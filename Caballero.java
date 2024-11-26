@@ -1,7 +1,7 @@
 package laboratorio19fp2;
 
 public class Caballero extends Soldado{
-    private String arma="espada";
+    private String arma="espada", estado="desmontar";
     
     public Caballero(String nombre, int numEjercito) {
         super(nombre, numEjercito);
@@ -16,7 +16,14 @@ public class Caballero extends Soldado{
             this.arma="espada";
     }
     
-    private void envestir(){
+    private void envestir(Soldado rival){
+        this.atacar(rival);
+        if (rival.isVive() && this.isVive()){
+            this.atacar(rival);
+        }
+    }
+    
+    private void montar(){
         
     }
 }

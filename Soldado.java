@@ -20,6 +20,10 @@ public class Soldado {
         return nombre;
     }
 
+    public boolean isVive() {
+        return vive;
+    }
+    
     public int getNivelAtaque() {
         return nivelAtaque;
     }

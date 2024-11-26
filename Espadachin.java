@@ -9,4 +9,7 @@ public class Espadachin extends Soldado{
         this.vidaActual=this.nivelVida;
     }
     
+    public void crearMuros(){
+        
+    }
 }
