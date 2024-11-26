@@ -1,17 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package laboratorio19fp2;
 
-/**
- *
- * @author Giovanni
- */
 public class Espadachin extends Soldado{
-
+    private int longitudEspada;
+    
     public Espadachin(String nombre, int numEjercito) {
         super(nombre, numEjercito);
+        this.nivelVida=(int)Math.round(Math.random()*2+3);
+        this.vidaActual=this.nivelVida;
     }
     
 }
