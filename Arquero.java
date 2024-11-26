@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package laboratorio19fp2;
-
-/**
- *
- * @author Giovanni
- */
-public class Arquero extends Soldado{
-
-    public Arquero(String nombre, int numEjercito) {
-        super(nombre, numEjercito);
-    }
-    
-    
-=======
 public class Arquero extends Soldado {
     private int numeroDeFlechas;
 
@@ -43,5 +24,4 @@ public class Arquero extends Soldado {
                ", numeroDeFlechas=" + numeroDeFlechas +
                '}';
     }
->>>>>>> 94c307e (Reemplazando la cadena principal)
 }
