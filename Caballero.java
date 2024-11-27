@@ -14,7 +14,7 @@ public class Caballero extends Soldado {
             armaActual = "lanza";
             System.out.println(nombre + " se ha montado y ahora usa una lanza.");
         } else {
-            System.out.println(nombre + " ya está montado.");
+            System.out.println(nombre + " ya esta montado.");
         }
     }
 
@@ -24,7 +24,7 @@ public class Caballero extends Soldado {
             armaActual = "espada";
             System.out.println(nombre + " se ha desmontado y ahora usa una espada.");
         } else {
-            System.out.println(nombre + " ya está desmontado.");
+            System.out.println(nombre + " ya esta desmontado.");
         }
     }
 
