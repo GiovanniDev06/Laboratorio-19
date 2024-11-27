@@ -2,23 +2,12 @@ public class Main {
     public static void main(String[] args) {
         Ejercito ejercito1 = new Ejercito();
         Ejercito ejercito2 = new Ejercito();
-
         Tablero tablero = new Tablero();
 
-        tablero.colocarEjercito(ejercito1, "1");
-        tablero.colocarEjercito(ejercito2, "2");
+        tablero.colocarEjercitos(ejercito1, ejercito2); // Asignar ejércitos al tablero
 
-        System.out.println("Estado inicial del tablero:");
-        tablero.mostrarTablero();
-
-        System.out.println("\nEjército 1:");
-        ejercito1.getSoldados().forEach(System.out::println);
-
-        System.out.println("\nEjército 2:");
-        ejercito2.getSoldados().forEach(System.out::println);
-
-        System.out.println("\n¡Comienza la batalla entre los ejércitos!");
-        BatallaEntreEjercitos.enfrentarEjercitos(ejercito1, ejercito2);
+        JuegoDeBatalla juego = new JuegoDeBatalla(tablero, ejercito1, ejercito2);
+        juego.iniciar();
     }
 }
 
