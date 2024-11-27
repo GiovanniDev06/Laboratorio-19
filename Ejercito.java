@@ -43,5 +43,6 @@ public class Ejercito {
     }
     public List<Soldado> getSoldados() {
         return soldados;
+        
     }
 }
