@@ -12,7 +12,7 @@ public class Tablero {
     private void inicializarTablero() {
         for (int i = 0; i < filas; i++) {
             for (int j = 0; j < columnas; j++) {
-                tablero[i][j] = "-"; // Espacios vacíos
+                tablero[i][j] = "-";
             }
         }
     }
@@ -47,7 +47,7 @@ public class Tablero {
         if (soldado instanceof Espadachin) return "E";
         if (soldado instanceof Arquero) return "A";
         if (soldado instanceof Caballero) return "C";
-        return "S"; // Por defecto
+        return "S";
     }
 
     public void mostrarTablero() {
