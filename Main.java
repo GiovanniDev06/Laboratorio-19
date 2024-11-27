@@ -16,6 +16,9 @@ public class Main {
 
         System.out.println("\nEjército 2:");
         ejercito2.getSoldados().forEach(System.out::println);
+
+        System.out.println("\n¡Comienza la batalla entre los ejércitos!");
+        BatallaEntreEjercitos.enfrentarEjercitos(ejercito1, ejercito2);
     }
 }
 
