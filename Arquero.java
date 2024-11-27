@@ -11,7 +11,7 @@ public class Arquero extends Soldado {
             numeroDeFlechas--;
             System.out.println(nombre + " disparó una flecha. Flechas restantes: " + numeroDeFlechas);
         } else {
-            System.out.println(nombre + " no tiene flechas disponibles.");
+            System.out.println(nombre + " no tiene flechas disponibles");
         }
     }
 
