@@ -33,7 +33,7 @@ public class Soldado {
         return "Soldado{" +
                "nombre='" + nombre + '\'' +
                ", puntosDeVida=" + puntosDeVida +
-               ", posición=(" + fila + ", " + columna + ")" +
+               ", posicion=(" + fila + ", " + columna + ")" +
                '}';
     }
 }
