@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Este trabajo es realizado por los estudiantes:
 
 Fredy Aragón
@@ -12,3 +13,6 @@ Crear la clase padre Soldado y las clases hijas con características específica
 Generar los ejércitos y el tablero de juego.
 Implementar la lógica de combate y resolución de turnos.
 Diseñar la mecánica para una batalla entre dos jugadores.
+=======
+Creando nuevo repositorio, este trabajo es realizado por los integrantes Fredy Aragón, Gustavo Carrillo, Giovanni Mejía y Mark Hancco.
+>>>>>>> 3811c019b1114f9319e2bde1c7a45b95e0db35e4
