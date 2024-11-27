@@ -1,8 +1,8 @@
 public class Arquero extends Soldado {
     private int numeroDeFlechas;
 
-    public Arquero(String nombre, int puntosDeVida, int fila, int columna, int numeroDeFlechas) {
-        super(nombre, puntosDeVida, fila, columna);
+    public Arquero(int numeroDeFlechas, String nombre, int puntosDeVida, int fila, int columna, int ejercito) {
+        super(nombre, puntosDeVida, fila, columna, ejercito);
         this.numeroDeFlechas = numeroDeFlechas;
     }
 

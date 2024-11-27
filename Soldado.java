@@ -1,17 +1,31 @@
 public class Soldado {
     protected String nombre;
     protected int puntosDeVida;
-    protected int fila;
-    protected int columna;
+    protected int fila,columna;
+    protected int ejercito;
+    protected static int numEjercitos=0;
     protected boolean vive=true;
 
-    public Soldado(String nombre, int puntosDeVida, int fila, int columna) {
+    public Soldado(String nombre, int puntosDeVida, int fila, int columna,int ejercito) {
         this.nombre = nombre;
         this.puntosDeVida = puntosDeVida;
         this.fila = fila;
         this.columna = columna;
+        this.ejercito = ejercito;
     }
 
+    public int getEjercito() {
+        return ejercito;
+    }
+
+    public static void setNumEjercitos(int numEjercitos) {
+        Soldado.numEjercitos = numEjercitos;
+    }
+    
+    public static int getNumEjercitos() {
+        return numEjercitos;
+    }
+    
     public void mover(int nuevaFila, int nuevaColumna) {
         this.fila = nuevaFila;
         this.columna = nuevaColumna;

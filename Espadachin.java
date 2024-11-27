@@ -1,8 +1,8 @@
 public class Espadachin extends Soldado {
     private int longitudDeEspada;
-    
-    public Espadachin(String nombre, int puntosDeVida, int fila, int columna, int longitudDeEspada) {
-        super(nombre, puntosDeVida, fila, columna);
+
+    public Espadachin(int longitudDeEspada, String nombre, int puntosDeVida, int fila, int columna, int ejercito) {
+        super(nombre, puntosDeVida, fila, columna, ejercito);
         this.longitudDeEspada = longitudDeEspada;
     }
     
