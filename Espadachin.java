@@ -7,7 +7,7 @@ public class Espadachin extends Soldado {
     }
     
     public void crearMuroDeEscudos() {
-        System.out.println(nombre + " está creando un muro de escudos.");
+        System.out.println(nombre + " está creando un muro de escudos");
     }
     
     @Override
@@ -15,7 +15,7 @@ public class Espadachin extends Soldado {
         return "Espadachin{" +
                 "nombre='" + nombre + '\'' +
                 ", puntosDeVida=" + puntosDeVida +
-                ", posición=(" + fila + ", " + columna + ")" +
+                ", posicion=(" + fila + ", " + columna + ")" +
                 ", longitudDeEspada=" + longitudDeEspada +
                 '}';
     }
