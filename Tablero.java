@@ -5,8 +5,8 @@ public class Tablero {
     private final int filas = 10;
     private final int columnas = 10;
 
-    private Ejercito ejercito1; // Referencia al Ejército 1
-    private Ejercito ejercito2; // Referencia al Ejército 2
+    private Ejercito ejercito1; 
+    private Ejercito ejercito2; 
 
     public Tablero() {
         tablero = new String[filas][columnas];
@@ -22,11 +22,11 @@ public class Tablero {
     }
 
     public void colocarEjercitos(Ejercito ejercito1, Ejercito ejercito2) {
-        this.ejercito1 = ejercito1; // Asignar los ejércitos
-        this.ejercito2 = ejercito2; // Asignar los ejércitos
+        this.ejercito1 = ejercito1; 
+        this.ejercito2 = ejercito2; 
     
-        colocarEjercito(ejercito1, "1"); // Colocar Ejército 1 en el tablero
-        colocarEjercito(ejercito2, "2"); // Colocar Ejército 2 en el tablero
+        colocarEjercito(ejercito1, "1"); 
+        colocarEjercito(ejercito2, "2"); 
     }
 
     private void colocarEjercito(Ejercito ejercito, String idEjercito) {
@@ -77,7 +77,6 @@ public class Tablero {
     }
     
     public Soldado obtenerSoldadoEnPosicion(int fila, int columna) {
-        // Busca un soldado en la posición dada
         for (Soldado soldado : ejercito1.getSoldados()) {
             if (soldado.fila == fila && soldado.columna == columna) {
                 return soldado;
@@ -92,8 +91,8 @@ public class Tablero {
     }
     
     public void moverSoldado(Soldado soldado, int nuevaFila, int nuevaColumna) {
-        tablero[soldado.fila][soldado.columna] = "-"; // Limpia la posición actual
-        tablero[nuevaFila][nuevaColumna] = "1" + obtenerTipoSoldado(soldado); // Actualiza la nueva posición
+        tablero[soldado.fila][soldado.columna] = "-"; 
+        tablero[nuevaFila][nuevaColumna] = "1" + obtenerTipoSoldado(soldado); 
         soldado.mover(nuevaFila, nuevaColumna);
     }
 
